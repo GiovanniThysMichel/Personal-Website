@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giovanni Michel – Home</title>
+    <!-- Link shared stylesheet across all pages -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">Giovanni Michel</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bio.html">Bio</a></li>
+          <li><a href="experience.html" class="active">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <h1>Giovanni Michel</h1>
+          <p>Engineer, Innovator, and Lifelong Learner</p>
+          <a href="contact.html" class="btn primary-btn">Get In Touch</a>
+          <a href="https://drive.google.com/file/d/1xmpP9LVgqKk0fLY3Qt4hRVDSa_2LXCk4/view?usp=sharing" class="btn primary-btn" target="_blank" rel="noopener noreferrer">My Resume</a>
+          <a href="https://github.com/GiovanniThysMichel" 
+            class="btn primary-btn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; <span id="currentYear"></span> Giovanni Michel. All rights reserved.</p>
+    </footer>
+    <script>
+      // Update the footer year automatically
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+    <script src="script.js" defer></script>
+  </body>
+</html>

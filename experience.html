@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giovanni Michel – Experience</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">Giovanni Michel</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bio.html">Bio</a></li>
+          <li><a href="experience.html" class="active">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="page-header">
+        <h1>Professional Experience</h1>
+      </section>
+      <section class="experience-section">
+        <div class="card-grid">
+          <div class="card">
+            <h3>Graduate Research Assistant – Los Alamos National Laboratory </h3>
+            <span class="card-date">August 2023 – June 2025</span>
+            <ul>
+              <li>Spearheaded research and development for training spiking neural networks on neuromorphic hardware for robotic control.</li>
+              <li>Established robust test environments, integrating software in-the loop simulations and continuous integration pipeline.</li>
+              <li>Created metrics for evaluating performance, developed test scripts for automation, and conducted functional testing.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Graduate Research Assistant – GRAYSON Lab Northwestern University </h3>
+            <span class="card-date">January 2024 –February 2025</span>
+            <ul>
+              <li>Developed experiments for cryogenic MOSFET characterization, focusing on subthreshold swing (SS), threshold voltage (Vt), and depletion capacitance (Cd) variation with temperature.</li>
+              <li>Developed automation software to integrate hardware with the cryogenic refrigeration system and measurement equipment.</li>
+              <li>Gained insight into low-temperature device physics, specifically modeling Fermi energy behavior below 50 kelvin (K) and its impact on device scaling.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Software Engineer Intern – Los Alamos National Laboratory </h3>
+            <span class="card-date">April 2022 – August 2023</span>
+            <ul>
+              <li>Built an SQL-backed schema to capture simulation, filesystem, and performance metadata, transforming multi-day HPC experiments into a searchable knowledge base for analysis and visualization.</li>
+              <li>Ported ML architectures to Intel Loihi FPGA using a two-layer spiking neural network with pretrained CPU weights.</li>
+              <li>Researched post-training ML methods for resource-constrained environments and scalable data science infrastructure.</li>
+              <li>Evaluated visualization frameworks for machine learning experiments and established reproducibility standards for experiment tracking and collaboration.</li>
+              <li>Developed a full-stack analytics platform with optimized APIs for experiment visualization.</li>
+            </ul>
+          </div>
+          <div class="card">
+            <h3>Software Engineer Intern – GRUBBRR </h3>
+            <span class="card-date">September 2021 – February 2022</span>
+            <ul>
+              <li>Responsible for performing Q&A automation duties for unit test and functional test assigned by Project Management.</li>
+              <li>Implemented standardized processes for Q&A group, which lead to efficient product testing for and design of end-to-end product release.</li>
+              <li>Engage in onsite coordination, progress, planning, closeout, & quality control to add support to project development.</li>
+            </ul>
+          </div>          
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; <span id="expYear"></span> Giovanni Michel. All rights reserved.</p>
+    </footer>
+    <script>
+      document.getElementById("expYear").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>

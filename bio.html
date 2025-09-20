@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giovanni Michel – Bio</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="nav-bar">
+        <a href="index.html" class="logo">Giovanni Michel</a>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="bio.html">Bio</a></li>
+          <li><a href="experience.html" class="active">Experience</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="page-header">
+        <h1>About Giovanni</h1>
+      </section>
+      <section class="bio-section">
+        <div class="bio-image">
+          <img src="portfolio-website.png" alt="Abstract portrait representing Giovanni Michel" />
+        </div>
+        <div class="bio-content">
+          <h2>Who I Am</h2>
+        <p>
+          Hello! I'm Giovanni Michel, an Electrical Engineer and Machine Learning Engineer. 
+          I earned my degree in Electrical Engineering from Northwestern University and my degree in Computer Engineering 
+          and Artificial Intelligence from Florida Atlantic University. I worked at Los Alamos National Laboratory (LANL) 
+          for over 3 years as a Machine Learning researcher.
+        </p>
+        <p>
+          At LANL, I had the opportunity to work at the intersection of Machine Learning, Control Theory, and Robotics. 
+          My passion lies in developing intelligent autonomous systems, and I'm actively seeking opportunities to advance 
+          robotics and AI technologies that can solve real-world challenges.
+        </p>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <p>&copy; <span id="bioYear"></span> Giovanni Michel. All rights reserved.</p>
+    </footer>
+    <script>
+      document.getElementById("bioYear").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
