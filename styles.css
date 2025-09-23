@@ -516,7 +516,7 @@ a:hover {
 }
 
 /* Contact page */
-.contact-wrapper {
+/* .contact-wrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
@@ -610,6 +610,142 @@ a:hover {
 
 .confirmation p {
   margin: 0.5rem 0;
+} */
+
+/* Contact page */
+.contact-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.contact-left {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.contact-left h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.contact-left p {
+  color: var(--secondary-text);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.contact-right {
+  flex: 1 1 400px;
+  max-width: 600px;
+}
+
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.contact-right label {
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.required {
+  font-size: 0.75rem;
+  color: var(--secondary-text);
+}
+
+.contact-right input,
+.contact-right textarea {
+  padding: 0.75rem 1rem;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  color: #000;
+  background-color: #f2f2f2;
+  width: 100%;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+.contact-right textarea {
+  border-radius: 20px;
+  min-height: 120px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+.submit-btn {
+  margin-top: 1rem;
+  background-color: var(--primary-color);
+  color: #0a0a0a;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 0.75rem 2rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start;
+  font-size: 1rem;
+}
+
+.submit-btn:hover {
+  background-color: #b5cbb5;
+}
+
+.confirmation {
+  background-color: var(--card-color);
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 2rem;
+  display: none;
+}
+
+.confirmation h2 {
+  margin-top: 0;
+  color: var(--primary-color);
+}
+
+.confirmation p {
+  margin: 0.5rem 0;
+}
+
+/* Fix any form field alignment issues */
+.contact-right form > * {
+  margin-bottom: 0.5rem;
+}
+
+.contact-right form label {
+  margin-bottom: 0.25rem;
+  margin-top: 0.75rem;
+}
+
+.contact-right form label:first-child {
+  margin-top: 0;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .contact-left,
+  .contact-right {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+  
+  .contact-left h1 {
+    font-size: 2rem;
+  }
 }
 
 /* Footer */

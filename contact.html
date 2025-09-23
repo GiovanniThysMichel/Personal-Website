@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giovanni Michel – Contact</title>
+    <title>Giovanni Michel â€" Contact</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -21,16 +21,16 @@
       </nav>
     </header>
     <main>
-      <section class="contact-wrapper">
+      <div class="contact-wrapper">
         <div class="contact-left">
           <h1>Get in touch with me</h1>
-          <p>I’m a recent graduate with two M.S. degrees in Engineering (Electrical & Artificial Intelligence) and a B.S. in Computer Engineering.</p>
-          <p>I’m excited to begin my career in robotics, machine learning, and autonomous systems.</p>
-          <p>If you’d like to connect about opportunities, collaborations, or just to talk tech, I’d love to hear from you!</p>
+          <p>I'm a recent graduate with two M.S. degrees in Engineering (Electrical & Artificial Intelligence) and a B.S. in Computer Engineering.</p>
+          <p>I'm excited to begin my career in robotics, machine learning, and autonomous systems.</p>
+          <p>If you'd like to connect about opportunities, collaborations, or just to talk tech, I'd love to hear from you!</p>
         </div>
         <div class="contact-right">
-          <!-- <form id="contact-form"> -->
-          <form id="contact-form" action="https://formspree.io/f/xyznyzro" method="POST"></form>
+          <form id="contact-form" action="https://formspree.io/f/xyznyzro" method="POST">
+            
             <label for="firstName">First Name <span class="required">(required)</span></label>
             <input type="text" id="firstName" name="firstName" required />
 
@@ -46,33 +46,27 @@
             <label for="message">Message <span class="required">(required)</span></label>
             <textarea id="message" name="message" rows="6" required></textarea>
 
-            <button type="submit" class="btn submit-btn">Submit</button>
+            <button type="submit" class="submit-btn">Submit</button>
           </form>
+          
           <div id="confirmation" class="confirmation">
             <!-- Confirmation details will be inserted here -->
           </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer class="site-footer">
       <p>&copy; <span id="contactYear"></span> Giovanni Michel. All rights reserved.</p>
     </footer>
     <script>
       document.getElementById("contactYear").textContent = new Date().getFullYear();
-      // Simple client‑side form handling for demonstration
+      
+      // Handle form submission
       document.getElementById("contact-form").addEventListener("submit", function (e) {
-        e.preventDefault();
-        const first = document.getElementById("firstName").value.trim();
-        const last = document.getElementById("lastName").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const subject = document.getElementById("subject").value.trim();
-        const message = document.getElementById("message").value.trim();
-        // Build a confirmation message with the user's inputs
+        // Let Formspree handle the submission, but show confirmation
         const confirmBox = document.getElementById("confirmation");
-        confirmBox.innerHTML = `<h2>Thank you for reaching out!</h2><p><strong>Name:</strong> ${first} ${last}</p><p><strong>Email:</strong> ${email}</p><p><strong>Subject:</strong> ${subject}</p><p><strong>Message:</strong> ${message}</p>`;
+        confirmBox.innerHTML = `<h2>Thank you for reaching out!</h2><p>Your message has been sent successfully. I'll get back to you soon!</p>`;
         confirmBox.style.display = "block";
-        // Optionally clear the form
-        this.reset();
       });
     </script>
   </body>
