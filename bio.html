@@ -31,7 +31,7 @@
         <div class="bio-content">
           <h2>Who I Am</h2>
         <p>
-          Hello! I'm Giovanni Michel, a first-generation Electrical Engineer and Computer Engineer. 
+          Hello! I'm Giovanni Michel, an Electrical Engineer and Machine Learning Engineer. 
           I earned my degree in Electrical Engineering from Northwestern University and my degree in Computer Engineering 
           and Artificial Intelligence from Florida Atlantic University. I worked at Los Alamos National Laboratory (LANL) 
           for over 3 years as a Machine Learning researcher.
@@ -43,129 +43,12 @@
         </p>
         </div>
       </section>
-
-      <!-- Timeline Section -->
-      <section class="timeline-section">
-        <h2>My Journey</h2>
-        <div class="timeline-container">
-          <div class="timeline-line"></div>
-
-          <div class="timeline-item" 
-               data-image="images/IMG_3933.png" 
-               data-title="Joined Los Alamos National Laboratory April 2022" 
-               data-caption="Started my professional career as a Software Engineer Intern at LANL. This opportunity allowed me to work on cutting-edge research at the intersection of data analysis, data management, and infrastructure. During my first internship at LANL I worked with Dr. Jesus Pulido (left).">
-            <div class="timeline-content">
-              <div class="timeline-date">2022</div>
-              <h3 class="timeline-title">LANL - Software Engineer Intern Researcher</h3>
-              <p class="timeline-description">Data Science Infrastructure</p>
-            </div>
-            <div class="timeline-dot"></div>
-          </div>
-
-          <div class="timeline-item" 
-               data-image="images/IMG_4098.png" 
-               data-title="First engineer in my family August 2022" 
-               data-caption="Began my journey in Computer Engineering at Florida Atlantic University, where I developed a strong foundation in circuits, embedded systems, and robotics. This was where my passion for technology and innovation truly began to flourish.">
-            <div class="timeline-content">
-              <div class="timeline-date">2022</div>
-              <h3 class="timeline-title">Florida Atlantic University</h3>
-              <p class="timeline-description">B.S. in Computer Engineering</p>
-            </div>
-            <div class="timeline-dot"></div>
-          </div>
-
-          <div class="timeline-item" 
-               data-image="images/IMG_4730.png" 
-               data-title="Attended 2022 SHPE National Convention and started accelerated MS in AI" 
-               data-caption="Pursued advanced studies in Artificial Intelligence at FAU, served as External VP of SHPE from August 2022-May 2023, and began Neuromorphic Computing research at LANL.">
-            <div class="timeline-content">
-              <div class="timeline-date">2022 - 2023</div>
-              <h3 class="timeline-title">Florida Atlantic University, SHPE, and LANL</h3>
-              <p class="timeline-description">Computer Engineering</p>
-            </div>
-            <div class="timeline-dot"></div>
-          </div>
-
-
-          <div class="timeline-item" 
-               data-image="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=800" 
-               data-title="Advanced Research Projects" 
-               data-caption="Led multiple research initiatives focusing on autonomous systems and intelligent control. Published papers and developed novel approaches to solving complex robotics challenges using machine learning and advanced control theory.">
-            <div class="timeline-content">
-              <div class="timeline-date">2022 - 2023</div>
-              <h3 class="timeline-title">Research Milestones</h3>
-              <p class="timeline-description">Control Theory & Autonomous Systems</p>
-            </div>
-            <div class="timeline-dot"></div>
-          </div>
-
-          <div class="timeline-item" 
-               data-image="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" 
-               data-title="Looking Ahead" 
-               data-caption="Currently seeking new opportunities to push the boundaries of robotics and AI technology. Passionate about developing intelligent autonomous systems that can solve real-world challenges and make a meaningful impact on society.">
-            <div class="timeline-content">
-              <div class="timeline-date">2024 - Present</div>
-              <h3 class="timeline-title">Next Chapter</h3>
-              <p class="timeline-description">Seeking opportunities in Robotics & AI</p>
-            </div>
-            <div class="timeline-dot"></div>
-          </div>
-        </div>
-      </section>
     </main>
-
-    <div class="popup-overlay" id="popup">
-      <div class="popup-content">
-        <button class="close-btn" id="closeBtn">&times;</button>
-        <img src="" alt="Timeline Image" class="popup-image" id="popupImage">
-        <div class="popup-text">
-          <h2 class="popup-title" id="popupTitle"></h2>
-          <p class="popup-caption" id="popupCaption"></p>
-        </div>
-      </div>
-    </div>
-
     <footer class="site-footer">
       <p>&copy; <span id="bioYear"></span> Giovanni Michel. All rights reserved.</p>
     </footer>
     <script>
       document.getElementById("bioYear").textContent = new Date().getFullYear();
-
-      const items = document.querySelectorAll('.timeline-item');
-      const popup = document.getElementById('popup');
-      const popupImage = document.getElementById('popupImage');
-      const popupTitle = document.getElementById('popupTitle');
-      const popupCaption = document.getElementById('popupCaption');
-      const closeBtn = document.getElementById('closeBtn');
-
-      items.forEach(item => {
-        item.addEventListener('click', () => {
-          const image = item.dataset.image;
-          const title = item.dataset.title;
-          const caption = item.dataset.caption;
-
-          popupImage.src = image;
-          popupTitle.textContent = title;
-          popupCaption.textContent = caption;
-          popup.classList.add('active');
-        });
-      });
-
-      closeBtn.addEventListener('click', () => {
-        popup.classList.remove('active');
-      });
-
-      popup.addEventListener('click', (e) => {
-        if (e.target === popup) {
-          popup.classList.remove('active');
-        }
-      });
-
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') {
-          popup.classList.remove('active');
-        }
-      });
     </script>
   </body>
 </html>
